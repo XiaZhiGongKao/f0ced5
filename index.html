@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加微信好友</title>
+    <!-- 引入 Font Awesome 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: calc(0.9rem + 0.5vw);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 设置微信图标的样式 */
+        .wechat-icon {
+            color: #2dc100;
+            font-size: 1.0em;
+            margin-right: 0.3em;
+        }
+
+        .qr-wrapper {
+            position: relative;
+            width: 94%;
+            padding-bottom: 100%;
+            margin: 20px 0;
+        }
+
+        .qr-code {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 8px;
+            background: white;
+        }
+   
+        .reminder {
+            color: #1a1a1a;
+            font-size: calc(0.8rem + 0.3vw);
+            margin-top: 15px;
+        }
+  
+        .warning {
+            color: #595959;
+            font-size: calc(0.6rem + 0.3vw);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 添加微信图标 -->
+        <h1><i class="fa-brands fa-weixin fa-enterprise wechat-icon"></i>微信扫码一键领资料</h1>
+        <!-- 方形图片容器 -->
+        <div class="qr-wrapper">
+            <img src="wechat_ding1.png" class="qr-code" alt="微信二维码">
+        </div>
+        <div class="reminder">
+            <br>
+            请截屏或保存二维码至手机相册，<br>用微信【扫一扫】打开，领取资料
+        </div>
+        <div class="warning">
+            <br>
+            💡 如果链接打开异常，请复制网址到手机浏览器中打开
+        </div>
+    </div>
+</body>
+
+</html>
